@@ -6,7 +6,7 @@ cfg = config.parse()
 namespaces = cfg.get('namespaces', [])
 
 trigger_file = str(local("""
-if ! command -v gmkdtemp &> /dev/null
+if ! command -v gmktemp &> /dev/null
 then
   mktemp -t -tilt-kubefwd
 else
