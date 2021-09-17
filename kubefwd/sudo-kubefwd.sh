@@ -10,7 +10,7 @@ PKEXEC=$(command -v pkexec)
 KDESUDO=$(command -v kdesudo)
 GKSUDO=$(command -v gksudo)
 KUBEFWD=$(command -v kubefwd)
-RUN_KUBEFWD=$(pwd)/run-kubefwd.sh
+RUN_KUBEFWD="'${PWD}/run-kubefwd.sh'"
 DIR=$(realpath "$(dirname "$0")")
 KUBECONFIG=${KUBECONFIG:-${HOME}/.kube/config}
 
